@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        background-color: #447dc7;
+        color: white;
+        font: normal 14pt Arial;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Iniciando estudo com DOM</h1>
+    <p>Aqui vai o resultado</p>
+    <p>Aprendendo a usar <strong>DOM</strong> em JavaScript.</p>
+    <div id="msg">Clique em mim</div>
+    <script>
+      //para selecionar qual o tipo de elemento vai ser apricada usando [] e sempre primeiro elemento vai ser '0'(zero)
+      var p1 = window.document.getElementsByTagName("p")[0];
+      var corpo = window.document.body;
+      var d = window.document.getElementById('msg')
+      // Vai busca que está dentro do tag
+      window.document.write("Está ecrito assim. " + p1.innerText);
+    //   d.style.background = 'green'
+    //   d.innerText = 'Estou aguardando..'
+    </script>
+  </body>
+</html>
