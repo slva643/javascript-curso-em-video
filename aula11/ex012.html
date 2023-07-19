@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nacionalidade</title>
+  </head>
+  <body>
+    Qual é seu País: <input type="text" name="txtp" id="txtp" />
+    <input type="button" value="Verificar" onclick="pesquisar()" />
+    <div id="res"></div>
+    <script>
+      function pesquisar() {
+        var txts = window.document.querySelector("input#txtp");
+        var res = window.document.querySelector("id#res");
+        vel = ('txts')
+        res.innerHTML = `<p>Seu País é ${vel}</p>`;
+      }
+    </script>
+  </body>
+</html>
