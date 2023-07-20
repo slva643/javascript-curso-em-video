@@ -5,9 +5,12 @@ function carregar() {
     var hora = data.getHours();
     var min = data.getMinutes()
     var seg = data.getSeconds()
-    setTimeout('carregar()',500)
+    var mes = data.getUTCDate()
+
+    setTimeout('carregar()', 500)
     // var hora = 18
-    msg.innerHTML = `<strong>Agora são ${hora}:${min}:${seg} horas.</strong>`
+    msg.innerHTML = `<strong>Agora são ${hora}:${min}:${seg} horas.<br>Dia do mês ${mes}.</strong>`
+
     if (hora >= 0 && hora < 12) {
         //Bom dia
         img.src = 'fotomanhã.png'
