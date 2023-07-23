@@ -59,6 +59,7 @@ function divição() {
         let c = 1
         tab.innerHTML = ''
         while (c <= 10) {
+
             let item = document.createElement('option')
             item.text = `${n} / ${c} = ${n / c}`
             item.value = `${c}`
